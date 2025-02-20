@@ -97,16 +97,18 @@ class CardApplicationType(enum.Enum):
 
 
 class CardStatus(enum.Enum):
-    # TODO: this can't be the only card status
     ACTIVE = "Active"
+    INACTIVE = "Inactive"
 
 
 class CardType(enum.Enum):
     ELEVEN_TO_FIFTEEN = "11-15"
+    SIXTEEN_PLUS = "16+"
 
 
 class CardScheme(enum.Enum):
     ELEVEN_TO_FIFTEEN_ZIP_LONDON = "11_to_15_zip_london"
+    SIXTEEN_PLUS_ZIP_LONDON = "16_plus_zip_london"
 
 
 @dataclasses.dataclass()
